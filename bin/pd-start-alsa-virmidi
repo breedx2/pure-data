@@ -1,0 +1,31 @@
+#!/bin/sh
+
+cd /home/jason/pd/patches
+
+LADSPA_PATH=/usr/lib/ladspa/
+PDB=/home/jason/pd
+PDPATH="$PDB/patches:$PDB/abstractions:$PDB/externals:$PDB/abs_from_others"
+export LADSPA_PATH
+
+#/usr/local/bin/pd -alsa -mididev 2 -audiobuf 100 -rt -path $PDPATH  -send "pd dsp 1" $1 
+#/usr/local/bin/pd -alsa -mididev 2 -audiobuf 10 -rt -path $PDPATH  -send "pd dsp 1" $@
+#/usr/local/bin/pd -alsa -font 9 -mididev 3 -audiobuf 10 -rt -path $PDPATH  -send "pd dsp 1" $@
+#/usr/local/bin/pd -alsa -mididev 3 -audiobuf 10 -rt -path $PDPATH  -send "pd dsp 1" $@
+#/usr/local/bin/pd -alsa -mididev 3 -audiobuf 10 -rt -path $PDPATH  -send "pd dsp 1" $@
+#/usr/local/bin/pd -alsa -mididev 3 -blocksize 128 -rt -path $PDPATH  -send "pd dsp 1" $@
+
+# mididev 2 == virtual midi card 1
+#/usr/local/bin/pd -alsa -mididev 2 -blocksize 128 -rt -path $PDPATH  -send "pd dsp 1" $@
+
+/usr/local/bin/pd -verbose -alsa \
+	-font-face "Lucida Console" -font-size 10 -font-weight normal \
+	-lib zexy \
+	-lib maxlib \
+	-lib Gem \
+	-audiodev 1 \
+	-channels 2 \
+	-r 48000 \
+	-mididev 5,1 \
+	-audiobuf 10 -path $PDPATH \
+	-send "pd dsp 1" $@
+
