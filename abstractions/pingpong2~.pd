@@ -1,0 +1,27 @@
+#N canvas 74 383 454 264 10;
+#X obj 28 174 *~;
+#X obj 84 174 *~;
+#X obj 83 129 sig~ 1;
+#X obj 133 150 -~;
+#X obj 27 196 outlet~;
+#X obj 84 196 outlet~;
+#X obj 29 17 inlet~;
+#X obj 94 18 inlet;
+#X obj 94 42 osc~ \$1;
+#X obj 94 62 +~ 1;
+#X obj 94 83 /~ 2;
+#X text 196 86 ping-pong -- sweeps audio back and forth \, left to
+right \, right to left \, at the input frequency. Similar to pingpong
+\, but this one uses osc instead of tri (for that sinusoidal feel!)
+by jason plumb;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 1;
+#X connect 6 0 0 0;
+#X connect 6 0 1 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 3 1;
+#X connect 10 0 0 1;

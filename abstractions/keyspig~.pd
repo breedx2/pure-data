@@ -1,0 +1,13 @@
+#N canvas 115 384 416 169 10;
+#X obj 48 31 keybang \$1;
+#X obj 48 54 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X text 81 58 key turns spigot on and off with each hit;
+#X text 96 130 relies on keybang;
+#X obj 11 9 inlet~;
+#X obj 24 128 outlet~;
+#X obj 25 102 *~;
+#X connect 0 0 1 0;
+#X connect 1 0 6 1;
+#X connect 4 0 6 0;
+#X connect 6 0 5 0;

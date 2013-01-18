@@ -1,0 +1,111 @@
+#N canvas 255 292 724 478 10;
+#X obj 20 360 pwm2~;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array array1 1000 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 2 999 -1 400 240 1;
+#X restore 264 16 graph;
+#X obj 95 399 metro 300;
+#X obj 96 376 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 91 426 tabwrite~ array1;
+#X obj 9 153 osc~ 0.5;
+#X floatatom 8 134 5 0 0 0 - - -;
+#X obj 10 174 +~ 1;
+#X obj 146 221 +~ 0.5;
+#X obj 145 200 *~ 0.45;
+#X obj 19 253 +~ 400;
+#X obj 9 228 *~ 400;
+#X obj -3 87 hsl 250 15 0.001 200 0 0 pulsewidth pulsewidth empty -2
+-8 0 10 -204786 -1 -1 10100 1;
+#X obj 12 426 dac~;
+#X floatatom 144 154 5 0 0 0 - - -;
+#X obj -4 11 hsl 250 15 0.001 200 0 0 freq_ctl empty empty -2 -8 0
+10 -261682 -1 -1 3 1;
+#X floatatom 51 204 5 0 0 0 - - -;
+#X obj 68 226 / 2;
+#X obj -3 48 hsl 250 15 0.001 600 0 0 freq_range empty empty -2 -8
+0 10 -262130 -1 -1 12800 1;
+#X obj 116 376 loadbang;
+#X obj 157 246 env~;
+#X floatatom 156 292 5 0 0 0 - - -;
+#X obj 32 276 env~;
+#X floatatom 32 320 5 0 0 0 - - -;
+#X obj 145 176 osc~ 125;
+#X text -8 -5 frequency control:;
+#X obj 148 129 r pulsewidth;
+#X obj 51 181 r freq_range;
+#X obj 9 113 r freq_ctl;
+#X text 262 273 pwm2~ is an audio-rate pwm generator.;
+#X text 262 289 Output swings from 0 to 1;
+#X text 263 304 Left inlet controls frequency.;
+#X obj 157 270 dbtorms;
+#X text 262 319 Right inlet controls duty cycle (range 0-1).;
+#X obj 32 298 dbtorms;
+#X floatatom 75 256 5 0 0 0 - - -;
+#X text -7 32 frequency range:;
+#X text -6 71 pulse width:;
+#X obj 18 400 *~;
+#X obj 49 400 tgl 15 0 empty empty empty 17 7 0 10 -204786 -1 -1 1
+1;
+#X text 263 351 http://noisybox.net/computers/pd;
+#X text 262 334 jason plumb and alex norman ::;
+#X connect 0 0 4 0;
+#X connect 0 0 38 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;
+#X connect 7 0 11 0;
+#X connect 8 0 0 1;
+#X connect 8 0 20 0;
+#X connect 9 0 8 0;
+#X connect 10 0 0 0;
+#X connect 10 0 22 0;
+#X connect 11 0 10 0;
+#X connect 14 0 24 0;
+#X connect 16 0 11 1;
+#X connect 16 0 17 0;
+#X connect 17 0 10 1;
+#X connect 17 0 35 0;
+#X connect 19 0 3 0;
+#X connect 20 0 32 0;
+#X connect 22 0 34 0;
+#X connect 24 0 9 0;
+#X connect 26 0 14 0;
+#X connect 27 0 16 0;
+#X connect 28 0 6 0;
+#X connect 32 0 21 0;
+#X connect 34 0 23 0;
+#X connect 38 0 13 0;
+#X connect 38 0 13 1;
+#X connect 39 0 38 1;

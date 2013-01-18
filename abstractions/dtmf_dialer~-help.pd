@@ -1,0 +1,25 @@
+#N canvas 8 87 418 290 10;
+#X obj 18 244 dac~;
+#X msg 24 48 1 8 0 0 5 5 5 1 2 1 2;
+#X floatatom 91 180 5 10 500 0 - - -;
+#X obj 94 161 hsl 65 15 10 500 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 900 1;
+#X floatatom 165 179 5 10 500 0 - - -;
+#X obj 169 160 hsl 65 15 10 500 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1100 1;
+#X text 89 142 on-time;
+#X text 166 142 off-time;
+#X msg 50 76 8 6 7 5 3 0 9;
+#X msg 67 105 1 9 7 6 4 6 8 7 5 8 8;
+#X obj 24 213 dtmf_dialer~ 200 100;
+#X text 20 18 dtmf_dialer~ - generates a series of dtmf tones;
+#X text 66 242 creation args are tone on-time and off-time;
+#X connect 1 0 10 0;
+#X connect 2 0 10 1;
+#X connect 3 0 2 0;
+#X connect 4 0 10 2;
+#X connect 5 0 4 0;
+#X connect 8 0 10 0;
+#X connect 9 0 10 0;
+#X connect 10 0 0 0;
+#X connect 10 0 0 1;

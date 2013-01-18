@@ -1,0 +1,11 @@
+#N canvas 32 633 401 129 10;
+#X obj 8 4 keyname;
+#X obj 36 34 select \$1;
+#X obj 7 101 outlet;
+#X obj 7 75 spigot;
+#X text 125 39 helper to send a bang when a desired key is pressed.
+may be weird with space etc.;
+#X connect 0 0 3 1;
+#X connect 0 1 1 0;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;

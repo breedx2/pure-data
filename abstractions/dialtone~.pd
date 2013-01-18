@@ -1,0 +1,10 @@
+#N canvas 543 126 366 175 10;
+#X obj 45 33 osc~ 350;
+#X obj 118 33 osc~ 440;
+#X obj 45 131 outlet~;
+#X text 119 75 dialtone simulator;
+#X text 122 92 jason plumb :: noisybox.net;
+#X obj 46 77 /~ 2;
+#X connect 0 0 5 0;
+#X connect 1 0 5 0;
+#X connect 5 0 2 0;

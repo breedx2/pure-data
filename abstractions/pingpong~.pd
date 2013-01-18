@@ -1,0 +1,21 @@
+#N canvas 74 383 468 293 10;
+#X obj 84 166 *~;
+#X obj 140 166 *~;
+#X obj 139 121 sig~ 1;
+#X obj 189 142 -~;
+#X obj 83 188 outlet~;
+#X obj 140 188 outlet~;
+#X obj 85 42 inlet~;
+#X text 252 78 ping-pong -- sweeps audio back and forth \, left to
+right \, right to left \, at the input frequency. by jason plumb;
+#X obj 150 40 inlet;
+#X obj 150 64 tri~ \$1;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 1;
+#X connect 6 0 0 0;
+#X connect 6 0 1 0;
+#X connect 8 0 9 0;
+#X connect 9 0 0 1;
+#X connect 9 0 3 1;
