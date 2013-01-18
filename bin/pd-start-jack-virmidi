@@ -4,7 +4,7 @@ cd /home/jason/pd/patches
 
 LADSPA_PATH=/usr/lib/ladspa/
 PDB=/home/jason/pd
-PDPATH="$PDB/patches:$PDB/abstractions:$PDB/externals:$PDB/abs_from_others"
+PDPATH="$PDB/patches:$PDB/abstractions:$PDB/externals:$PDB/abstractions/from_others"
 export LADSPA_PATH
 
 #/usr/local/bin/pd -jack -mididev 2 -audiobuf 10 -rt -path $PDPATH  -send "pd dsp 1" $@
