@@ -1,0 +1,506 @@
+#N canvas 519 256 640 644 12;
+#X obj 10 14 bng 15 250 50 0 empty b1 empty 17 7 0 10 -257985 -258113
+-257985;
+#X text 42 42 _s_o_u_n_d___s_y_n_t_h_e_s_i_s____;
+#X text 50 572 http://dorkbotpdx.org/wiki/synthesis_workshop_in_pd
+;
+#X obj 27 14 bng 15 250 50 0 empty b2 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 44 14 bng 15 250 50 0 empty b3 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 61 14 bng 15 250 50 0 empty b4 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 78 14 bng 15 250 50 0 empty b5 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 95 14 bng 15 250 50 0 empty b6 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 112 14 bng 15 250 50 0 empty b7 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 129 14 bng 15 250 50 0 empty b8 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 146 14 bng 15 250 50 0 empty b9 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 163 14 bng 15 250 50 0 empty b10 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 180 14 bng 15 250 50 0 empty b11 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 197 14 bng 15 250 50 0 empty b12 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 214 14 bng 15 250 50 0 empty b13 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 231 14 bng 15 250 50 0 empty b14 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 248 14 bng 15 250 50 0 empty b15 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 265 14 bng 15 250 50 0 empty b16 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 282 14 bng 15 250 50 0 empty b17 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 299 14 bng 15 250 50 0 empty b18 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 316 14 bng 15 250 50 0 empty b19 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 333 14 bng 15 250 50 0 empty b20 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 350 14 bng 15 250 50 0 empty b21 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 367 14 bng 15 250 50 0 empty b22 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 384 14 bng 15 250 50 0 empty b23 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 401 14 bng 15 250 50 0 empty b24 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 418 14 bng 15 250 50 0 empty b25 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 435 14 bng 15 250 50 0 empty b26 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 452 14 bng 15 250 50 0 empty b27 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 469 14 bng 15 250 50 0 empty b28 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 486 14 bng 15 250 50 0 empty b29 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 503 14 bng 15 250 50 0 empty b30 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 520 14 bng 15 250 50 0 empty b31 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 537 14 bng 15 250 50 0 empty b32 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 554 14 bng 15 250 50 0 empty b33 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 571 14 bng 15 250 50 0 empty b34 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 588 14 bng 15 250 50 0 empty b35 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 14 bng 15 250 50 0 empty b36 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 31 bng 15 250 50 0 empty b37 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 48 bng 15 250 50 0 empty b38 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 65 bng 15 250 50 0 empty b39 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 82 bng 15 250 50 0 empty b40 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 99 bng 15 250 50 0 empty b41 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 116 bng 15 250 50 0 empty b42 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 133 bng 15 250 50 0 empty b43 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 150 bng 15 250 50 0 empty b44 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 167 bng 15 250 50 0 empty b45 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 184 bng 15 250 50 0 empty b46 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 201 bng 15 250 50 0 empty b47 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 218 bng 15 250 50 0 empty b48 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 235 bng 15 250 50 0 empty b49 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 252 bng 15 250 50 0 empty b50 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 269 bng 15 250 50 0 empty b51 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 286 bng 15 250 50 0 empty b52 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 303 bng 15 250 50 0 empty b53 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 320 bng 15 250 50 0 empty b54 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 337 bng 15 250 50 0 empty b55 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 354 bng 15 250 50 0 empty b56 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 371 bng 15 250 50 0 empty b57 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 388 bng 15 250 50 0 empty b58 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 405 bng 15 250 50 0 empty b59 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 422 bng 15 250 50 0 empty b60 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 439 bng 15 250 50 0 empty b61 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 456 bng 15 250 50 0 empty b62 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 473 bng 15 250 50 0 empty b63 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 490 bng 15 250 50 0 empty b64 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 507 bng 15 250 50 0 empty b65 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 524 bng 15 250 50 0 empty b66 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 541 bng 15 250 50 0 empty b67 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 558 bng 15 250 50 0 empty b68 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 575 bng 15 250 50 0 empty b69 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 31 bng 15 250 50 0 empty b138 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 48 bng 15 250 50 0 empty b137 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 65 bng 15 250 50 0 empty b136 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 82 bng 15 250 50 0 empty b135 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 99 bng 15 250 50 0 empty b134 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 116 bng 15 250 50 0 empty b133 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 133 bng 15 250 50 0 empty b132 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 150 bng 15 250 50 0 empty b131 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 167 bng 15 250 50 0 empty b130 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 184 bng 15 250 50 0 empty b129 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 201 bng 15 250 50 0 empty b128 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 218 bng 15 250 50 0 empty b127 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 235 bng 15 250 50 0 empty b126 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 252 bng 15 250 50 0 empty b125 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 269 bng 15 250 50 0 empty b124 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 286 bng 15 250 50 0 empty b123 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 303 bng 15 250 50 0 empty b122 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 320 bng 15 250 50 0 empty b121 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 337 bng 15 250 50 0 empty b120 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 354 bng 15 250 50 0 empty b119 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 371 bng 15 250 50 0 empty b118 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 388 bng 15 250 50 0 empty b117 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 405 bng 15 250 50 0 empty b116 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 422 bng 15 250 50 0 empty b115 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 439 bng 15 250 50 0 empty b114 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 456 bng 15 250 50 0 empty b113 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 473 bng 15 250 50 0 empty b112 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 490 bng 15 250 50 0 empty b111 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 507 bng 15 250 50 0 empty b110 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 524 bng 15 250 50 0 empty b109 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 541 bng 15 250 50 0 empty b108 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 558 bng 15 250 50 0 empty b107 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 575 bng 15 250 50 0 empty b106 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 10 592 bng 15 250 50 0 empty b105 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 27 592 bng 15 250 50 0 empty b104 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 44 592 bng 15 250 50 0 empty b103 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 61 592 bng 15 250 50 0 empty b102 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 78 592 bng 15 250 50 0 empty b101 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 95 592 bng 15 250 50 0 empty b100 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 112 592 bng 15 250 50 0 empty b99 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 129 592 bng 15 250 50 0 empty b98 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 146 592 bng 15 250 50 0 empty b97 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 163 592 bng 15 250 50 0 empty b96 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 180 592 bng 15 250 50 0 empty b95 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 197 592 bng 15 250 50 0 empty b94 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 214 592 bng 15 250 50 0 empty b93 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 231 592 bng 15 250 50 0 empty b92 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 248 592 bng 15 250 50 0 empty b91 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 265 592 bng 15 250 50 0 empty b90 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 282 592 bng 15 250 50 0 empty b89 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 299 592 bng 15 250 50 0 empty b88 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 316 592 bng 15 250 50 0 empty b87 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 333 592 bng 15 250 50 0 empty b86 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 350 592 bng 15 250 50 0 empty b85 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 367 592 bng 15 250 50 0 empty b84 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 384 592 bng 15 250 50 0 empty b83 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 401 592 bng 15 250 50 0 empty b82 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 418 592 bng 15 250 50 0 empty b81 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 435 592 bng 15 250 50 0 empty b80 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 452 592 bng 15 250 50 0 empty b79 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 469 592 bng 15 250 50 0 empty b78 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 486 592 bng 15 250 50 0 empty b77 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 503 592 bng 15 250 50 0 empty b76 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 520 592 bng 15 250 50 0 empty b75 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 537 592 bng 15 250 50 0 empty b74 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 554 592 bng 15 250 50 0 empty b73 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 571 592 bng 15 250 50 0 empty b72 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 588 592 bng 15 250 50 0 empty b71 empty 17 7 0 10 -257985 -258113
+-257985;
+#X obj 605 592 bng 15 250 50 0 empty b70 empty 17 7 0 10 -257985 -258113
+-257985;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array sin 100 float 0;
+#X coords 0 1 99 -1 125 80 1 0 0;
+#X restore 57 256 graph;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array tri 100 float 0;
+#X coords 0 1 99 -0.15 125 80 1 0 0;
+#X restore 182 256 graph;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array sq 100 float 0;
+#X coords 0 1 99 -1 125 80 1 0 0;
+#X restore 307 256 graph;
+#N canvas 2017 215 524 625 (Pure 0;
+#X obj 28 20 tabwrite~ sin;
+#X msg 91 -3 bang;
+#X obj 20 -65 osc~ 800;
+#X obj 22 -42 *~ 0.85;
+#X obj 95 -46 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 96 -67 loadbang;
+#X obj 92 -26 metro 250;
+#X msg 266 134 bang;
+#X obj 197 65 *~ 0.85;
+#X obj 269 93 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 267 68 loadbang;
+#X obj 266 113 metro 250;
+#X obj 198 157 tabwrite~ tri;
+#X obj 202 -43 *~ 2;
+#X obj 202 -20 -~ 1;
+#X obj 196 43 *~;
+#X obj 226 7 *~ 8.38861e+06;
+#X obj 226 27 clip~ -1 1;
+#X obj 201 -67 phasor~ 800;
+#X obj 13 100 *~ 8.38861e+06;
+#X obj 14 135 clip~ -1 1;
+#X obj 12 66 osc~ 800;
+#X msg 104 209 bang;
+#X obj 107 168 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 105 143 loadbang;
+#X obj 104 188 metro 250;
+#X obj 36 232 tabwrite~ sq;
+#X obj 16 160 *~ 0.85;
+#X obj 327 220 *~ 2;
+#X obj 327 243 -~ 1;
+#X obj 321 306 *~;
+#X obj 351 270 *~ 8.38861e+06;
+#X obj 351 290 clip~ -1 1;
+#X msg 346 451 bang;
+#X obj 349 410 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 347 385 loadbang;
+#X obj 221 348 osc~;
+#X obj 211 406 *~ 0.85;
+#X obj 304 486 tabwrite~ sy;
+#X obj 44 292 *~ 2;
+#X obj 44 315 -~ 1;
+#X obj 38 378 *~;
+#X obj 68 342 *~ 8.38861e+06;
+#X obj 68 362 clip~ -1 1;
+#X obj 42 267 phasor~ 11000;
+#X obj 120 446 +~;
+#X obj 36 404 *~ 0.15;
+#N canvas 7 53 467 445 marquee 0;
+#X floatatom 73 113 5 0 0 0 - - -;
+#X msg 69 228 b\$1;
+#X obj 46 290 send;
+#X obj 68 148 t b f;
+#X obj 72 257 symbol;
+#X obj 171 166 env~;
+#X obj 171 189 dbtorms;
+#X obj 172 211 * 138;
+#X obj 172 234 int;
+#X floatatom 198 112 5 0 0 0 - - -;
+#X obj 300 174 env~;
+#X obj 300 197 dbtorms;
+#X obj 275 308 * 138;
+#X obj 275 331 int;
+#X floatatom 312 122 5 0 0 0 - - -;
+#X obj 299 270 -;
+#X obj 300 221 t b f;
+#X obj 300 245 1;
+#X obj 170 144 phasor~ 0.2;
+#X obj 300 151 phasor~ 0.2;
+#X obj 171 39 +~ 1;
+#X obj 171 61 *~ 0.3;
+#X obj 171 85 +~ 0.1;
+#X obj 296 41 +~ 1;
+#X obj 296 63 *~ 0.3;
+#X obj 296 87 +~ 0.1;
+#X obj 295 18 osc~ 0.5;
+#X obj 170 16 osc~ 0.4;
+#X obj 28 80 spigot;
+#X obj 72 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 66 36 loadbang;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 3 0 28 0;
+#X connect 3 1 1 0;
+#X connect 4 0 2 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 3 0;
+#X connect 9 0 18 0;
+#X connect 10 0 11 0;
+#X connect 11 0 16 0;
+#X connect 12 0 13 0;
+#X connect 13 0 3 0;
+#X connect 14 0 19 0;
+#X connect 15 0 12 0;
+#X connect 16 0 17 0;
+#X connect 16 1 15 1;
+#X connect 17 0 15 0;
+#X connect 18 0 5 0;
+#X connect 19 0 10 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 22 0 18 0;
+#X connect 23 0 24 0;
+#X connect 24 0 25 0;
+#X connect 25 0 19 0;
+#X connect 26 0 23 0;
+#X connect 27 0 20 0;
+#X connect 28 0 2 0;
+#X connect 29 0 28 1;
+#X connect 30 0 29 0;
+#X restore 386 -44 pd marquee;
+#X obj 346 430 metro 120;
+#X obj 319 328 *~ 6000;
+#X obj 327 192 phasor~ 0.3;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
+#X connect 7 0 12 0;
+#X connect 8 0 12 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 7 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 14 0 16 0;
+#X connect 15 0 8 0;
+#X connect 16 0 17 0;
+#X connect 17 0 15 1;
+#X connect 18 0 13 0;
+#X connect 19 0 20 0;
+#X connect 20 0 27 0;
+#X connect 21 0 19 0;
+#X connect 22 0 26 0;
+#X connect 23 0 25 0;
+#X connect 24 0 23 0;
+#X connect 25 0 22 0;
+#X connect 27 0 26 0;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X connect 29 0 31 0;
+#X connect 30 0 49 0;
+#X connect 31 0 32 0;
+#X connect 32 0 30 1;
+#X connect 33 0 38 0;
+#X connect 34 0 48 0;
+#X connect 35 0 34 0;
+#X connect 36 0 45 1;
+#X connect 37 0 38 0;
+#X connect 39 0 40 0;
+#X connect 40 0 41 0;
+#X connect 40 0 42 0;
+#X connect 41 0 46 0;
+#X connect 42 0 43 0;
+#X connect 43 0 41 1;
+#X connect 44 0 39 0;
+#X connect 45 0 37 0;
+#X connect 46 0 45 0;
+#X connect 48 0 33 0;
+#X connect 49 0 36 0;
+#X connect 50 0 28 0;
+#X restore 438 103 pd (Pure Data);
+#X text 46 352 When:;
+#X obj 98 354 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 49 436 Participants should bring:;
+#X obj 52 458 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 477 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 496 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 71 495 Headphones;
+#X obj 52 515 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 71 515 An eagerness to learn \, develop \, and share!;
+#X text 117 351 Sunday \, May 29th \, 2011 :: 1-5pm PST;
+#X obj 98 376 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 46 374 Where:;
+#X text 117 373 Pacific Northwest College of Art (PNCA) \, Room 205
+;
+#X text 117 390 Portland \, OR \, US;
+#X obj 53 415 hsl 525 8 0 127 0 0 empty empty empty -2 -8 0 10 -4034
+-1 -1 0 1;
+#X obj 45 229 hsl 525 8 0 127 0 0 empty empty empty -2 -8 0 10 -4034
+-1 -1 0 1;
+#X text 41 128 Fascinated by orgies of towering analog synthesizers
+from the 60s? Mesmerized by how computers can generate sound that offends
+and elates? In this casual yet intense session \, we will cover the
+basics of audio signal theory while exploring the common techniques
+and tricks used by sound designers and synth builders.;
+#X text 42 63 [[...dorkbotpdx is proud to announce...]];
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array sy 100 float 0;
+#X coords 0 1 99 -1 125 80 1 0 0;
+#X restore 432 256 graph;
+#X text 71 475 A basic/rudimentary knowledge of Pd;
+#X text 42 87 A unique \, *free* workshop geared at teaching sound
+synthesis;
+#X text 40 103 fundamentals as explored and demonstrated through;
+#X text 71 456 A mac/linux/win laptop with a functioning pure data
+install;
+#X text 50 538 The synthesis workshop is FREE and OPEN TO THE PUBLIC.
+Seating is limited to about 30 (first-come \, first serve);

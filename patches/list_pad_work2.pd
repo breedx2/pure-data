@@ -1,0 +1,16 @@
+#N canvas 0 0 450 300 10;
+#X obj 177 170 list-pad;
+#X obj 222 118 list append;
+#X obj 258 152 print listy;
+#X msg 196 77 bang;
+#X msg 270 72 5 1 3 4 1;
+#X obj 175 213 print output;
+#X floatatom 160 132 5 0 0 0 - - -;
+#X msg 255 39 2 4;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 1 0;
+#X connect 4 0 1 1;
+#X connect 6 0 0 0;
+#X connect 7 0 0 1;

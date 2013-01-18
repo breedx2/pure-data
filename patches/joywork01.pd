@@ -1,0 +1,18 @@
+#N canvas 0 0 450 300 10;
+#X obj 69 89 joystick 0 0 0 0;
+#X floatatom 62 150 5 0 0 0 - - -;
+#X floatatom 106 149 5 0 0 0 - - -;
+#X floatatom 150 150 5 0 0 0 - - -;
+#X floatatom 194 151 5 0 0 0 - - -;
+#X floatatom 238 152 5 0 0 0 - - -;
+#X floatatom 285 153 5 0 0 0 - - -;
+#X floatatom 329 153 5 0 0 0 - - -;
+#X floatatom 372 153 5 0 0 0 - - -;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 0 2 3 0;
+#X connect 0 3 4 0;
+#X connect 0 4 5 0;
+#X connect 0 5 6 0;
+#X connect 0 6 7 0;
+#X connect 0 7 8 0;

@@ -1,0 +1,36 @@
+#N struct awf-template-$0 float x float y float h;
+#N canvas 10 574 492 300 10;
+#X obj 19 238 tabwrite~ mytab1;
+#X obj 139 239 table mytab1;
+#X msg 140 174 \; mytab1 resize 48000;
+#X obj 20 203 osc~ 3;
+#X msg 76 211 bang;
+#X msg 116 28 set mytab1;
+#X obj 14 31 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X floatatom 209 28 5 0 0 0 - - -;
+#X floatatom 20 184 5 0 0 0 - - -;
+#X msg 139 207 \; mytab2 resize 48000;
+#X obj 229 240 table mytab2;
+#X msg 111 6 set mytab2;
+#X obj 325 187 adc~;
+#X obj 324 239 tabwrite~ mytab2;
+#X msg 337 212 bang;
+#X obj 257 50 agraph mytab2 48000;
+#X obj 257 29 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 359 27 set mytab1;
+#X msg 354 4 set mytab2;
+#X obj 14 53 agraph mytab1 48000;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 19 1;
+#X connect 6 0 19 0;
+#X connect 7 0 19 2;
+#X connect 8 0 3 0;
+#X connect 11 0 19 1;
+#X connect 12 0 13 0;
+#X connect 14 0 13 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 1;
+#X connect 18 0 15 1;

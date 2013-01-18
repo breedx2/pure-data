@@ -1,0 +1,88 @@
+#N canvas 269 105 679 499 10;
+#X obj 14 129 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 33 129 bng 15 250 50 0 empty empty empty 0 -6 0 8 -261681 -1
+-1;
+#X obj 583 13 p5glove 9998;
+#X obj 14 85 r p5_mbtn1;
+#X obj 21 105 r p5_btn1;
+#X obj 90 128 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 109 128 bng 15 250 50 0 empty empty empty 0 -6 0 8 -261681 -1
+-1;
+#X obj 98 104 r p5_btn2;
+#X obj 90 84 r p5_mbtn2;
+#X obj 165 128 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 184 128 bng 15 250 50 0 empty empty empty 0 -6 0 8 -261681 -1
+-1;
+#X obj 173 104 r p5_btn3;
+#X obj 165 84 r p5_mbtn3;
+#X text 16 66 Buttons:;
+#X text 293 47 Fingers:;
+#X obj 269 191 vsl 15 60 0 1 0 0 empty empty empty 0 -8 0 8 -225280
+-355 -1 2060 1;
+#X obj 269 88 r p5_thumb;
+#X obj 289 161 vsl 15 90 0 1 0 0 empty empty empty 0 -8 0 8 -225280
+-355 -1 0 1;
+#X obj 332 161 vsl 15 90 0 1 0 0 empty empty empty 0 -8 0 8 -225280
+-355 -1 848 1;
+#X obj 310 146 vsl 15 105 0 1 0 0 empty empty empty 0 -8 0 8 -225280
+-355 -1 0 1;
+#X obj 353 191 vsl 15 60 0 1 0 0 empty empty empty 0 -8 0 8 -225280
+-355 -1 1124 1;
+#X obj 310 104 r p5_middle;
+#X obj 332 122 r p5_ring;
+#X obj 353 85 r p5_pinky;
+#X obj 61 373 r p5_x;
+#X obj 43 169 r p5_y;
+#X obj 62 392 hsl 250 15 -0.3 0.3 0 0 empty empty empty -2 -6 0 8 -225271
+-1 -1 9100 1;
+#X obj 43 189 vsl 15 200 -0.3 0.3 0 0 empty empty empty 0 -8 0 8 -225271
+-1 -1 5797 1;
+#X obj 471 79 r p5_fistbang;
+#X obj 499 121 tgl 25 0 empty empty empty 0 -6 0 8 -261689 -1 -1 0
+1;
+#X obj 471 121 bng 25 250 50 0 empty empty empty 0 -6 0 8 -261689 -1
+-1;
+#X obj 478 99 r p5_mfist;
+#X obj 63 292 hsl 250 15 -0.3 0.3 0 0 empty empty empty -2 -6 0 8 -257472
+-1 -1 13545 1;
+#X obj 60 273 r p5_z;
+#X obj 332 393 hsl 250 15 -1 1 0 0 empty empty empty -2 -6 0 8 -225271
+-1 -1 21893 1;
+#X obj 584 189 vsl 15 200 -1 1 0 0 empty empty empty 0 -8 0 8 -225271
+-1 -1 3886 1;
+#X obj 330 292 hsl 250 15 -1 1 0 0 empty empty empty -2 -6 0 8 -257472
+-1 -1 15323 1;
+#X obj 516 376 r p5_roll;
+#X obj 584 168 r p5_pitch;
+#X obj 524 275 r p5_yaw;
+#X text 471 60 Signs:;
+#X text 59 408 Position;
+#X text 525 409 Rotation;
+#X obj 512 234 r p5_angle;
+#X floatatom 544 255 5 0 0 0 - - -;
+#X text 12 7 Demo patch to show off the p5osc abstraction;
+#X text 11 23 jason plumb :: noisybox.net;
+#X obj 289 67 r p5_index;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;
+#X connect 11 0 10 0;
+#X connect 12 0 9 0;
+#X connect 16 0 15 0;
+#X connect 21 0 19 0;
+#X connect 22 0 18 0;
+#X connect 23 0 20 0;
+#X connect 24 0 26 0;
+#X connect 25 0 27 0;
+#X connect 28 0 30 0;
+#X connect 31 0 29 0;
+#X connect 33 0 32 0;
+#X connect 37 0 34 0;
+#X connect 38 0 35 0;
+#X connect 39 0 36 0;
+#X connect 43 0 44 0;
+#X connect 47 0 17 0;

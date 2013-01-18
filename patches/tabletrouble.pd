@@ -1,0 +1,18 @@
+#N canvas 505 493 450 300 10;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array array1 10 float 1;
+#A 0 0.98572 0 0.971435 0 0.978577 0 0.98572 0 1.00001 0;
+#X coords 0 1 9 0 200 140 1;
+#X restore 32 47 graph;
+#X floatatom 266 85 5 0 0 0 - - -;
+#X obj 261 128 tabread array1;
+#X obj 263 162 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262131 -1 -1 0 256;
+#X obj 258 60 hradio 15 1 0 10 empty empty empty 0 -8 0 10 -262144
+-1 -1 3;
+#X text 61 208 interpolation?;
+#X text 60 221 even indexes reporting zero??;
+#X text 61 237 what gives?;
+#X connect 2 0 3 0;
+#X connect 4 0 1 0;
+#X connect 4 0 2 0;

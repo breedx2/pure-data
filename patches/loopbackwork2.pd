@@ -1,0 +1,30 @@
+#N canvas 150 30 879 628 10;
+#X obj 114 87 osc~;
+#X obj 114 61 hsl 250 15 0 600 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 700 1;
+#X msg 555 42 bang;
+#X msg 601 42 stop;
+#X msg 263 189 bang;
+#X msg 308 189 bang;
+#X obj 214 320 mout~;
+#X obj 214 240 loopback~ 12 45;
+#X obj 212 150 wetdry~ 50;
+#X obj 285 111 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8100 1;
+#X obj 546 183 osc~;
+#X obj 542 118 random 150;
+#X obj 544 76 metro 35;
+#X obj 545 147 + 650;
+#X connect 0 0 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 12 0;
+#X connect 3 0 12 0;
+#X connect 4 0 7 1;
+#X connect 5 0 7 2;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;
+#X connect 9 0 8 2;
+#X connect 10 0 8 1;
+#X connect 11 0 13 0;
+#X connect 12 0 11 0;
+#X connect 13 0 10 0;

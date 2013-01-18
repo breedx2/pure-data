@@ -1,0 +1,14 @@
+#N canvas 0 0 450 300 10;
+#X obj 40 40 infinity_pedal /dev/infinity-footpedal;
+#X floatatom 47 86 5 0 0 0 - - -;
+#X floatatom 159 90 5 0 0 0 - - -;
+#X floatatom 286 90 5 0 0 0 - - -;
+#X obj 37 133 print left;
+#X obj 149 136 print middle;
+#X obj 272 138 print right;
+#X connect 0 0 1 0;
+#X connect 0 0 4 0;
+#X connect 0 1 2 0;
+#X connect 0 1 5 0;
+#X connect 0 2 3 0;
+#X connect 0 2 6 0;

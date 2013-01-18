@@ -1,0 +1,28 @@
+#N canvas 655 582 450 300 10;
+#X obj 51 20 inlet~;
+#X obj 49 264 outlet~;
+#X obj 106 20 cnv 15 122 18 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 112 26 hsl 70 8 0 127 0 0 empty \$0-hsvr empty -2 -8 0 10 -141074
+-1 -1 4900 1;
+#X obj 50 242 *~;
+#X floatatom 188 22 5 0 0 0 - - -;
+#X obj 68 58 clip 0 20;
+#X obj 286 61 loadbang;
+#X obj 284 116 \$0;
+#X obj 323 115 \$1;
+#X obj 283 90 t b b;
+#X obj 282 195 pack 0 0;
+#X msg 283 219 \; \$0-hsvr range \$1 \$2;
+#X connect 0 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 1;
+#X connect 7 0 10 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 1;
+#X connect 10 0 8 0;
+#X connect 10 1 9 0;
+#X connect 11 0 12 0;
+#X coords 0 -1 1 1 126 22 1 104 18;

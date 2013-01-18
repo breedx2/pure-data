@@ -1,0 +1,36 @@
+#N canvas 88 239 734 532 10;
+#X obj 79 376 sout~;
+#X obj 80 322 jon~;
+#X obj 79 183 osc~ 50;
+#X obj 81 120 vline~;
+#X obj 81 44 metro 4000;
+#X msg 79 18 bang;
+#X obj 180 165 noise~;
+#X obj 180 217 bp~ 100 5;
+#X floatatom 247 191 5 0 0 0 - - -;
+#X floatatom 225 241 5 0 0 0 - - -;
+#X obj 346 154 snapshot~;
+#X obj 343 122 metro 50;
+#X msg 345 91 bang;
+#X msg 81 92 50 \, 580 4000;
+#X obj 178 253 *~ 18;
+#X msg 363 307 predelay 10 \, bandwidth 10000 \, damping 4637 \, decay
+0.99 \, input_diffusion1 0.685 \, input_diffusion2 0.779 \, decay_diffusion1
+0.889 \, decay_diffusion2 0.84 \, excursion 0;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 3 0 10 0;
+#X connect 4 0 13 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 14 0;
+#X connect 8 0 7 2;
+#X connect 9 0 14 1;
+#X connect 10 0 7 1;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 1 1;
+#X connect 15 0 1 2;

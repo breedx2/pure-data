@@ -1,0 +1,32 @@
+#N canvas 581 58 553 378 10;
+#X obj 480 52 plot;
+#X obj 479 23 struct;
+#N canvas 13 595 450 300 guidata 1;
+#X restore 38 76 pd guidata;
+#N canvas 499 757 346 146 structtyp-template 1;
+#X obj 16 23 struct structtyp float y;
+#X obj 16 56 filledpolygon 0 0 0 -5 0 0 5 5 0 0 -5;
+#X restore 41 46 pd structtyp-template;
+#N canvas 506 578 455 89 datastruct-template 1;
+#X obj 32 62 plot array42 500 1 10 15 20;
+#X obj 31 31 struct teststruct array array42 structtyp-template;
+#X restore 39 20 pd datastruct-template;
+#X obj 17 353 struct guidata array array42 teststruct;
+#X obj 215 190 pointer;
+#X msg 223 160 bang;
+#X msg 266 161 next;
+#X msg 215 127 traverse pd-guidata;
+#X obj 269 217 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 224 214 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 161 274 append;
+#X obj 433 119 element;
+#X obj 430 146 get;
+#X obj 434 170 append;
+#X connect 6 0 11 0;
+#X connect 6 0 12 1;
+#X connect 6 1 10 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 0;

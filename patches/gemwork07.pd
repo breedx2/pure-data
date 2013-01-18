@@ -1,0 +1,90 @@
+#N canvas 353 343 594 475 10;
+#X obj 47 398 gemwin;
+#X msg 42 358 create;
+#X obj 61 379 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 70 336 dimen 720 480;
+#X obj 22 290 loadbang;
+#X obj 23 314 t b b b;
+#X obj 378 105 cnv 15 200 200 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 394 216 pix_texture;
+#X obj 393 237 rectangle 4 3;
+#X obj 395 172 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 394 151 loadbang;
+#X obj 475 136 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 474 158 rectangle \$1;
+#X obj 131 18 cnv 15 230 250 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 142 167 gemframebuffer;
+#X floatatom 246 202 5 0 0 0 - - -;
+#X text 244 217 id;
+#X msg 240 74 dimen 720 480;
+#X msg 237 33 color 0 1 0 0;
+#X obj 242 53 loadbang;
+#X obj 141 243 rectangle 4 3;
+#N canvas 0 0 482 300 pixit 0;
+#X obj 25 72 pix_image /home/jason/infiltrationlab/fliegendeholle/house_sparrow_m_i_img_7881.jpg
+;
+#X obj 30 19 inlet;
+#X obj 24 156 outlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X restore 140 193 pd pixit brd2;
+#X obj 148 220 pix_texture;
+#X obj 209 119 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 206 139 rectangle \$1;
+#X obj 13 16 cnv 15 100 130 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 27 81 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X text 45 85 peek;
+#X msg 27 57 0;
+#X obj 26 34 loadbang;
+#X obj 28 104 gemhead 53;
+#X msg 238 115 env \$1;
+#X obj 238 102 hradio 8 1 0 6 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X msg 497 129 env \$1;
+#X obj 497 117 hradio 8 1 0 6 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X floatatom 254 236 5 0 0 0 - - -;
+#X text 252 251 id;
+#X obj 142 35 gemhead 50;
+#X obj 394 193 gemhead 51;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 5 1 1 0;
+#X connect 5 2 3 0;
+#X connect 7 0 8 0;
+#X connect 9 0 38 0;
+#X connect 10 0 9 0;
+#X connect 11 0 12 0;
+#X connect 12 0 7 0;
+#X connect 14 0 21 0;
+#X connect 14 1 15 0;
+#X connect 14 1 7 1;
+#X connect 17 0 14 0;
+#X connect 18 0 14 0;
+#X connect 19 0 17 0;
+#X connect 21 0 22 0;
+#X connect 22 0 20 0;
+#X connect 22 1 35 0;
+#X connect 23 0 24 0;
+#X connect 24 0 14 0;
+#X connect 26 0 30 0;
+#X connect 28 0 26 0;
+#X connect 29 0 28 0;
+#X connect 30 0 21 0;
+#X connect 31 0 22 0;
+#X connect 32 0 31 0;
+#X connect 33 0 7 0;
+#X connect 34 0 33 0;
+#X connect 37 0 14 0;
+#X connect 38 0 7 0;

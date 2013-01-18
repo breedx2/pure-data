@@ -1,0 +1,11 @@
+#N canvas 462 204 376 397 10;
+#X obj 79 152 list-avg;
+#X obj 79 89 list-queue 8;
+#X obj 80 61 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 3;
+#X obj 108 124 print;
+#X floatatom 90 179 5 0 0 0 - - -;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;

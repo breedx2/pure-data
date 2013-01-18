@@ -1,0 +1,18 @@
+#N canvas 606 16 450 300 10;
+#X obj 29 -49 osc~ 50;
+#X obj 93 -49 osc~ 250;
+#X obj 160 -49 osc~ 500;
+#X obj 228 -50 osc~ 1000;
+#X obj 305 -47 osc~ 2500;
+#X obj 333 -7 osc~ 5000;
+#X obj 151 -81 osc~ 2500;
+#X floatatom 152 -104 5 0 0 0 - - -;
+#X obj 34 57 freq_graph_work;
+#X connect 0 0 8 0;
+#X connect 1 0 8 0;
+#X connect 2 0 8 0;
+#X connect 3 0 8 0;
+#X connect 4 0 8 0;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;

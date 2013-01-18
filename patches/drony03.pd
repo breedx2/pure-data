@@ -1,0 +1,51 @@
+#N canvas 335 341 585 546 10;
+#X obj 102 255 dac~;
+#X obj 169 300 hsl 128 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 10700 1;
+#X obj 79 193 *~;
+#X floatatom 165 326 5 0 0 0 - - -;
+#X obj 78 214 panning~;
+#X obj 75 138 readanysf~;
+#X obj 246 43 openpanel;
+#X obj 247 66 symbol;
+#X msg 247 92 open \$1;
+#X obj 247 21 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 87 64 play;
+#X msg 88 85 stop;
+#X msg 177 163 time_seek \$1;
+#X floatatom 177 146 5 0 0 0 - - -;
+#X obj 178 127 hsl 250 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 11800 1;
+#X obj 44 414 dline~ 1500 0.9;
+#X obj 129 363 hsl 400 15 0 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 37500 1;
+#X floatatom 160 389 5 0 0 0 - - -;
+#X floatatom 198 241 5 0 0 0 - - -;
+#X msg 188 261 speed \$1;
+#X obj 188 220 hsl 128 15 0 3 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 4233 1;
+#X floatatom 185 198 5 0 0 0 - - -;
+#X connect 1 0 3 0;
+#X connect 1 0 2 1;
+#X connect 2 0 4 0;
+#X connect 4 0 0 0;
+#X connect 4 1 0 1;
+#X connect 5 0 15 0;
+#X connect 5 1 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 5 0;
+#X connect 9 0 6 0;
+#X connect 10 0 5 0;
+#X connect 11 0 5 0;
+#X connect 12 0 5 0;
+#X connect 13 0 12 0;
+#X connect 14 0 13 0;
+#X connect 15 0 2 0;
+#X connect 16 0 15 2;
+#X connect 16 0 17 0;
+#X connect 19 0 5 0;
+#X connect 20 0 19 0;
+#X connect 20 0 18 0;
+#X connect 21 0 20 0;
