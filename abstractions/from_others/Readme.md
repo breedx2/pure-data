@@ -1,4 +1,3 @@
-I didn't make this stuff.
 Abstractions from other people...
 =========
 
