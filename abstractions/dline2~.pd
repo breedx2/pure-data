@@ -1,0 +1,31 @@
+#N canvas 1052 300 568 294 10;
+#X obj 26 24 inlet~;
+#X obj 26 258 outlet~;
+#X obj 26 142 hip~ 5;
+#X floatatom 125 176 5 0 1 0 - - -, f 5;
+#X obj 60 196 *~ 0.5;
+#X obj 166 24 inlet;
+#X obj 27 167 /~ 2;
+#X text 28 8 audio;
+#X text 81 8 delay(ms);
+#X text 168 10 feedback;
+#X text 168 156 feedback delay line capable of handling up to 60 seconds.
+inputs are signal \, delay time (ms) \, and feedback amount (which
+defaults to 0.5) -jason plumb;
+#X obj 61 219 delwrite~ \$0_dl 60000;
+#X obj 96 24 inlet~;
+#X obj 67 108 vd~ \$0_dl 50;
+#X obj 85 143 \$1;
+#X obj 186 68 loadbang;
+#X connect 0 0 2 0;
+#X connect 2 0 6 0;
+#X connect 2 0 4 0;
+#X connect 4 0 11 0;
+#X connect 5 0 3 0;
+#X connect 5 0 4 1;
+#X connect 6 0 1 0;
+#X connect 12 0 13 0;
+#X connect 13 0 2 0;
+#X connect 14 0 4 1;
+#X connect 14 0 3 0;
+#X connect 15 0 14 0;

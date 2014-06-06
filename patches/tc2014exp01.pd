@@ -1,0 +1,32 @@
+#N canvas 256 198 924 748 10;
+#X obj 113 554 sout~;
+#X obj 193 545 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 126 502 *~ 1;
+#X obj -16 198 adc~;
+#X obj 135 329 hsl 128 15 10 500 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12300 1;
+#X obj 134 373 sig~;
+#X floatatom 142 350 5 0 0 0 - - -, f 5;
+#X obj 98 408 dline2~ 0.85;
+#X floatatom 179 385 5 0 1 0 - - -, f 5;
+#X obj 108 213 hsl 128 15 10 500 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 893 1;
+#X obj 107 257 sig~;
+#X floatatom 115 234 5 0 0 0 - - -, f 5;
+#X obj 71 292 dline2~ 0.85;
+#X floatatom 152 269 5 0 1 0 - - -, f 5;
+#X connect 1 0 0 2;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 12 0;
+#X connect 4 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 7 1;
+#X connect 7 0 2 0;
+#X connect 8 0 7 2;
+#X connect 9 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 12 1;
+#X connect 12 0 7 0;
+#X connect 13 0 12 2;

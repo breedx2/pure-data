@@ -22,7 +22,7 @@ export LADSPA_PATH
 	-lib zexy \
 	-lib maxlib \
 	-lib Gem \
-	-audiodev 1 \
+	-audiodev 0 \
 	-channels 2 \
 	-r 48000 \
 	-mididev 5,1 \
