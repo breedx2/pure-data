@@ -25,7 +25,8 @@ export LADSPA_PATH
 	-audiodev 0 \
 	-channels 2 \
 	-r 48000 \
-	-mididev 5,1 \
+	-midiindev 1 \
+	-midioutdev 1 \
 	-audiobuf 10 -path $PDPATH \
 	-send "pd dsp 1" $@
 

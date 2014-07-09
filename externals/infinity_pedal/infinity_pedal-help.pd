@@ -1,16 +1,14 @@
-#N canvas 288 239 389 274 10;
-#X obj 41 92 infinity_pedal /dev/infinity-footpedal;
-#X floatatom 50 118 5 0 0 0 - - -;
-#X floatatom 160 118 5 0 0 0 - - -;
-#X floatatom 279 120 5 0 0 0 - - -;
+#N canvas 286 237 403 282 10;
+#X floatatom 50 118 5 0 0 0 - - -, f 5;
+#X floatatom 160 118 5 0 0 0 - - -, f 5;
+#X floatatom 279 120 5 0 0 0 - - -, f 5;
 #X obj 28 139 print left;
 #X obj 145 137 print middle;
 #X obj 266 138 print right;
 #X text 44 15 infinity footpedal external by jason plumb;
 #X text 43 26 jason@noisybox.net;
 #X text 43 38 http://noisybox.net/computers/infinity-pedal/;
-#X text 157 72 creation argument is device path;
-#N canvas 0 0 400 245 other 0;
+#N canvas 2 52 400 245 other 0;
 #X obj 16 16 cnv 15 248 58 empty empty empty 20 12 0 14 -207531 -66577
 0;
 #N canvas 164 370 244 357 tog 0;
@@ -36,8 +34,8 @@
 #X connect 8 0 1 0;
 #X connect 9 0 1 0;
 #X restore 28 141 pd tog;
-#X obj 27 30 tgl 30 0 empty inf-pedal-rcv-l empty 17 7 0 10 -24198
--233017 -228992 1 1;
+#X obj 23 30 tgl 30 0 empty inf-pedal-rcv-l empty 17 7 0 10 -195568
+-233017 -262144 0 1;
 #N canvas 300 552 450 300 colors 0;
 #X obj 30 15 inlet;
 #X obj 32 47 select 1;
@@ -49,8 +47,7 @@
 #X connect 1 1 3 0;
 #X connect 4 0 3 0;
 #X restore 28 159 pd colors;
-#X obj 28 98 infinity_pedal /dev/infinity_footpedal;
-#N canvas 164 370 244 357 tog 0;
+#N canvas 163 396 244 357 tog 0;
 #X obj 47 19 inlet;
 #X obj 46 267 outlet;
 #X obj 50 65 select 1;
@@ -118,27 +115,29 @@
 #X connect 1 1 3 0;
 #X connect 4 0 3 0;
 #X restore 253 160 pd colors;
-#X obj 67 30 tgl 30 0 empty inf-pedal-rcv-2 empty 17 7 0 10 -24198
--233017 -228992 1 1;
-#X obj 107 30 tgl 30 0 empty inf-pedal-rcv-3 empty 17 7 0 10 -195568
+#X obj 60 30 tgl 30 0 empty inf-pedal-rcv-2 empty 17 7 0 10 -195568
 -233017 -262144 0 1;
-#X text 151 25 another instance;
-#X text 151 39 is toggling these;
-#X text 151 53 on and off;
+#X obj 100 30 tgl 30 0 empty inf-pedal-rcv-3 empty 17 7 0 10 -195568
+-233017 -262144 0 1;
+#X text 138 22 another instance;
+#X text 138 36 is toggling these;
+#X text 138 50 on and off;
+#X obj 89 102 infinity_pedal;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;
-#X connect 4 0 1 0;
-#X connect 4 1 5 0;
-#X connect 4 2 7 0;
-#X connect 5 0 6 0;
-#X connect 5 0 9 0;
-#X connect 7 0 8 0;
-#X connect 7 0 10 0;
+#X connect 4 0 5 0;
+#X connect 4 0 8 0;
+#X connect 6 0 7 0;
+#X connect 6 0 9 0;
+#X connect 13 0 1 0;
+#X connect 13 1 4 0;
+#X connect 13 2 6 0;
 #X coords 0 -1 1 1 250 60 1 15 15;
 #X restore 67 189 pd other instances;
-#X connect 0 0 1 0;
-#X connect 0 0 4 0;
-#X connect 0 1 2 0;
-#X connect 0 1 5 0;
-#X connect 0 2 3 0;
-#X connect 0 2 6 0;
+#X obj 106 90 infinity_pedal;
+#X connect 10 0 0 0;
+#X connect 10 0 3 0;
+#X connect 10 1 1 0;
+#X connect 10 1 4 0;
+#X connect 10 2 2 0;
+#X connect 10 2 5 0;
