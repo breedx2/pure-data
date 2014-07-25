@@ -7,7 +7,7 @@
 #X obj 266 138 print right;
 #X text 44 15 infinity footpedal external by jason plumb;
 #X text 43 26 jason@noisybox.net;
-#X text 43 38 http://noisybox.net/computers/infinity-pedal/;
+#X text 43 38 http://noisybox.net/infinity-pedal;
 #N canvas 2 52 400 245 other 0;
 #X obj 16 16 cnv 15 248 58 empty empty empty 20 12 0 14 -207531 -66577
 0;
