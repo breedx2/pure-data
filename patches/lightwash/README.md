@@ -22,3 +22,4 @@ be controlled over the local network via OSC messages.
 10 minute performances.
 
 The Pd materials here are what I used during LIGHT WASH.  
+The patch here depends on my `[nrpn_in]` and `[nrpn_out]` abstractions, as well as my `[range]` abstraction.
