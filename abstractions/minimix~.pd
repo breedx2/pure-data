@@ -1,24 +1,24 @@
-#N canvas 617 494 538 376 10;
-#X obj 51 20 inlet~;
-#X obj 49 264 outlet~;
-#X obj 106 20 cnv 15 122 18 empty empty empty 20 12 0 14 -132828 -66577
+#N canvas 861 414 432 458 10;
+#X obj -53 2 inlet~;
+#X obj -55 246 outlet~;
+#X obj 2 2 cnv 15 122 18 empty empty empty 20 12 0 14 -132828 -66577
 0;
-#X obj 112 26 hsl 70 8 0 0 0 0 empty \$0-hsvr empty -2 -8 0 10 -199336
+#X obj 8 8 hsl 70 8 0 0 0 0 empty \$0-hsvr empty -2 -8 0 10 -199336
 -1 -1 -2.14748e+09 1;
-#X obj 50 242 *~;
-#X floatatom 188 22 5 0 0 0 - - -;
-#X obj 171 60 loadbang;
-#X obj 234 129 \$1;
-#X obj 273 129 \$2;
-#X obj 200 160 pack 0 0 0;
-#X obj 201 130 \$0;
-#X msg 199 184 \; \$1-hsvr range \$2 \$3;
-#X obj 128 149 \$1;
-#X obj 128 170 s \$0-hsvr;
-#X obj 168 89 t b b b b;
-#X obj 138 264 outlet;
-#X obj 240 21 inlet;
-#X obj 91 91 t f f;
+#X obj -54 224 *~;
+#X floatatom 84 4 5 0 0 0 - - -, f 5;
+#X obj 67 42 loadbang;
+#X obj 130 111 \$1;
+#X obj 169 111 \$2;
+#X obj 96 142 pack 0 0 0;
+#X obj 97 112 \$0;
+#X msg 95 166 \; \$1-hsvr range \$2 \$3;
+#X obj 24 131 \$1;
+#X obj 24 152 s \$0-hsvr;
+#X obj 64 71 t b b b b;
+#X obj 34 246 outlet;
+#X obj 136 3 inlet;
+#X obj -13 73 t f f;
 #X connect 0 0 4 0;
 #X connect 3 0 5 0;
 #X connect 4 0 1 0;
@@ -36,4 +36,4 @@
 #X connect 16 0 3 0;
 #X connect 17 0 15 0;
 #X connect 17 1 4 1;
-#X coords 0 -1 1 1 126 22 1 104 18;
+#X coords 0 0 1 1 126 22 1 0 0;
