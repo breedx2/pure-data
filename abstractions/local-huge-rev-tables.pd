@@ -1,0 +1,11 @@
+#N canvas 1773 221 866 369 12;
+#X msg 68 142 /home/jason/media/sound/reverb_sources/impulse_ms_garage02_stereo.wav
+;
+#X obj 73 251 huge-rev-tables;
+#X obj 71 215 symbol;
+#X obj 64 45 loadbang;
+#X text 237 76 local paths to media for huge-rev-tables;
+#X text 238 99 edit paths to your environment;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;

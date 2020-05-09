@@ -1,0 +1,14 @@
+#N canvas 1258 841 814 580 12;
+#X obj 123 296 *~ 0.075;
+#X obj 122 361 outlet~;
+#X obj 122 267 partconv~ hrev1-L 2048;
+#X obj 312 291 *~ 0.075;
+#X obj 311 356 outlet~;
+#X obj 311 262 partconv~ hrev1-R 2048;
+#X obj 121 117 inlet~;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 0;
+#X connect 6 0 2 0;
+#X connect 6 0 5 0;

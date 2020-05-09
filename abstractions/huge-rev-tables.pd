@@ -1,0 +1,12 @@
+#N canvas 2233 760 955 742 12;
+#X obj 49 243 soundfiler;
+#X obj 92 215 print huge;
+#X msg 48 186 read -resize \$1 hrev1-L hrev1-R;
+#X obj 42 334 table hrev1-R;
+#X obj 42 301 table hrev1-L;
+#X text 114 71 common place to hold all tables for use in huge-rev
+abstractions.;
+#X obj 47 35 inlet;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 6 0 2 0;
