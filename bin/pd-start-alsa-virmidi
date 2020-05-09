@@ -25,10 +25,10 @@ export LADSPA_PATH
 
 	#-font-face "DejaVu Sans Mono" -font-size 24 -font-weight normal \
 	#-audiodev 3 \
+    # -lib Gem \
 /usr/bin/pd -verbose -alsa \
 	-lib zexy \
 	-lib maxlib \
-	-lib Gem \
 	-channels 2 \
 	-alsaadd pulse \
 	-audioadddev 'UMC204HD 192k' \
