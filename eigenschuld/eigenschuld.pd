@@ -46,7 +46,7 @@
 #X floatatom 203 369 5 0 0 0 - - -;
 #X text 197 348 pos ms;
 #X obj 71 159 hsl 795 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 22200 1;
+-1 -1 0 1;
 #X floatatom 66 190 5 0 0 0 - - -;
 #X obj 105 239 *;
 #X obj 22 282 t b f;
@@ -62,7 +62,7 @@
 #X obj 474 407 newgranule~ sample;
 #X floatatom 615 329 5 0 0 0 - - -;
 #X obj 142 179 hsl 795 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 28070 1;
+-1 -1 0 1;
 #X floatatom 382 246 5 0 0 0 - - -;
 #X obj 406 280 *;
 #X obj 428 247 r duration;
@@ -132,7 +132,9 @@
 #X floatatom 353 369 5 0 0 0 - - -;
 #X msg 332 317 speed \$1;
 #X msg 352 393 wamp \$1;
-#X obj 875 264 newgranule_v~;
+#X obj 876 278 newgranule_v~;
+#X obj 1038 232 r duration;
+#X msg 1037 255 duration \$1;
 #X connect 3 0 11 0;
 #X connect 4 0 14 1;
 #X connect 8 0 9 0;
@@ -177,3 +179,5 @@
 #X connect 51 0 14 2;
 #X connect 52 0 14 2;
 #X connect 53 0 2 0;
+#X connect 54 0 55 0;
+#X connect 55 0 53 1;
