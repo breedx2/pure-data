@@ -1,0 +1,6 @@
+convert audio
+ffmpeg -i somevideo.avi -ss 00:28:00 -t 00:02:30.0 -vn -acodec copy /tmp/out.mp3
+ffmpeg -i /tmp/out.mp3 -o /tmp/out.wav
+ffmpeg -i /tmp/out.mp3 /tmp/out.wav
+ffmpeg -i /tmp/out.mp3 -ar 48000 /tmp/out.wav
+
