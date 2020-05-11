@@ -45,7 +45,7 @@
 #X floatatom 66 190 5 0 0 0 - - -;
 #X obj 20 283 t b f;
 #X obj 142 179 hsl 795 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 43868 1;
+-1 -1 0 1;
 #N canvas 2473 415 822 1023 hitshot 0;
 #X obj 58 438 outlet~;
 #X obj 58 400 tabplay~ sample;
@@ -125,12 +125,12 @@
 #X msg 735 565 spread \$1;
 #X obj 604 649 huge-rev1~;
 #X obj 635 625 hsl 80 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 14700 1;
+-1 -1 0 1;
 #X obj 589 676 wetdry~;
 #X obj 646 676 wetdry~;
 #X msg 664 398 speed \$1;
 #X floatatom 663 372 5 0 0 0 - - -;
-#N canvas 0 80 450 300 loops 1;
+#N canvas 0 80 450 300 loops 0;
 #X restore 1050 292 pd loops;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
