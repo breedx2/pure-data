@@ -45,7 +45,7 @@
 #X floatatom 66 190 5 0 0 0 - - -;
 #X obj 20 283 t b f;
 #X obj 142 179 hsl 795 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 45271 1;
 #N canvas 2473 415 822 1023 hitshot 0;
 #X obj 58 438 outlet~;
 #X obj 58 400 tabplay~ sample;
@@ -114,29 +114,43 @@
 #X obj 333 497 wetdry~;
 #X obj 390 497 wetdry~;
 #X obj 824 473 huge-rev1~;
-#X obj 593 549 ngs~;
-#X obj 592 596 *~;
-#X obj 625 594 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 553 485 ngs~;
+#X obj 553 516 *~;
+#X obj 586 514 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 606 484 5 0 0 0 - - -;
-#X obj 672 446 r duration;
-#X msg 671 469 duration \$1;
-#X floatatom 732 520 5 0 0 0 - - -;
-#X msg 735 565 spread \$1;
-#X obj 604 649 huge-rev1~;
-#X obj 635 625 hsl 80 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
+#X floatatom 566 420 5 0 0 0 - - -;
+#X obj 632 382 r duration;
+#X msg 631 405 duration \$1;
+#X floatatom 650 478 5 0 0 0 - - -;
+#X msg 649 500 spread \$1;
+#X obj 565 569 huge-rev1~;
+#X obj 596 545 hsl 80 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 589 676 wetdry~;
-#X obj 646 676 wetdry~;
-#X msg 664 398 speed \$1;
-#X floatatom 663 372 5 0 0 0 - - -;
+#X obj 550 596 wetdry~;
+#X obj 607 596 wetdry~;
+#X msg 624 334 speed \$1;
+#X floatatom 623 308 5 0 0 0 - - -;
 #N canvas 0 80 450 300 loops 0;
 #X restore 1050 292 pd loops;
+#X msg 653 433 distphase;
+#X msg 658 454 randphase;
+#X text 954 436 todo list;
+#X text 955 458 vis ngs~;
+#X text 956 480 slow seq with adsr from pos + speed;
+#X text 953 530 wavetable dist;
+#X text 953 573 midi controller;
+#X text 953 595 test recording;
+#X text 953 551 loops;
+#X obj 25 507 ngs_v~;
+#X obj 167 443 r duration;
+#X msg 166 466 duration \$1;
+#X text 956 505 ngs~ internal pos move (freq+amp);
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
 #X connect 3 0 19 0;
 #X connect 6 0 22 0;
 #X connect 6 0 37 0;
+#X connect 6 0 61 0;
 #X connect 7 0 17 0;
 #X connect 8 0 11 0;
 #X connect 9 0 11 1;
@@ -189,3 +203,9 @@
 #X connect 48 0 28 1;
 #X connect 49 0 37 2;
 #X connect 50 0 49 0;
+#X connect 52 0 37 2;
+#X connect 53 0 37 2;
+#X connect 61 0 28 0;
+#X connect 61 1 28 1;
+#X connect 62 0 63 0;
+#X connect 63 0 61 1;
