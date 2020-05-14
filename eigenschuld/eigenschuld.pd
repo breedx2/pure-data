@@ -45,7 +45,7 @@
 #X floatatom 66 190 5 0 0 0 - - -;
 #X obj 20 283 t b f;
 #X obj 142 179 hsl 795 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 73600 1;
 #N canvas 442 292 822 1023 hitshot 0;
 #X obj 58 438 outlet~;
 #X obj 58 400 tabplay~ sample;
@@ -132,43 +132,131 @@
 -1 -1 0 1;
 #X obj 803 531 wetdry~;
 #X obj 860 531 wetdry~;
-#N canvas 1653 180 1798 1654 seq 1;
-#X obj 58 91 metro 500;
+#N canvas 1676 158 1415 1589 seq 1;
 #X obj 74 113 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 59 66 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 58 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 130 64 5 0 0 0 - - -;
 #X obj 342 25 inlet;
-#X obj 58 646 outlet~;
+#X obj 58 653 outlet~;
 #X obj 342 53 route duration;
 #X obj 214 146 inlet;
 #X text 211 125 clock;
 #X text 259 138 TODO: divisor for this instance;
 #X obj 58 274 seqrow~;
 #X floatatom 384 88 5 0 0 0 - - -;
-#X msg 501 109 duration \$1;
-#X obj 502 87 * 1000;
+#X msg 593 107 duration \$1;
+#X obj 594 85 * 1000;
 #X obj 58 334 seqrow~;
-#X text 538 207 todo: state saving!;
-#X obj 82 541 dline~ 150 0.85;
-#X obj 63 567 dline~ 150 0.85;
-#X text 225 531 todo wet/dry;
-#X connect 0 0 1 0;
-#X connect 0 0 10 0;
-#X connect 0 0 14 0;
-#X connect 2 0 0 0;
-#X connect 3 0 0 1;
-#X connect 4 0 6 0;
-#X connect 6 0 11 0;
-#X connect 6 0 13 0;
-#X connect 10 0 16 0;
-#X connect 12 0 10 1;
-#X connect 12 0 14 1;
-#X connect 13 0 12 0;
-#X connect 14 0 17 0;
-#X connect 16 0 5 0;
-#X connect 17 0 5 0;
+#X text 452 158 todo: state saving!;
+#X msg 593 213 sync;
+#N canvas 0 80 1314 601 steps 0;
+#X obj 104 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 121 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 93 68 f;
+#X obj 123 67 + 1;
+#X obj 93 93 % 16;
+#X obj 84 123 select 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+#X obj 138 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 155 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 172 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 189 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 206 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 223 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 240 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 257 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 274 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 291 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 308 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 325 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 342 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 359 174 bng 15 75 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 88 21 inlet;
+#X msg 93 44 bang;
+#X obj 366 15 inlet;
+#X msg 365 55 bang;
+#X msg 363 79 0;
+#X connect 2 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 2 1;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 1 1 0;
+#X connect 5 2 6 0;
+#X connect 5 3 7 0;
+#X connect 5 4 8 0;
+#X connect 5 5 9 0;
+#X connect 5 6 10 0;
+#X connect 5 7 11 0;
+#X connect 5 8 12 0;
+#X connect 5 9 13 0;
+#X connect 5 10 14 0;
+#X connect 5 11 15 0;
+#X connect 5 12 16 0;
+#X connect 5 13 17 0;
+#X connect 5 14 18 0;
+#X connect 5 15 19 0;
+#X connect 20 0 21 0;
+#X connect 21 0 2 0;
+#X connect 22 0 23 0;
+#X connect 23 0 24 0;
+#X connect 24 0 2 1;
+#X coords 0 -1 1 1 280 30 1 100 170;
+#X restore 59 233 pd steps;
+#X obj 58 91 metro 185;
+#X obj 58 26 loadbang;
+#X msg 124 27 stop;
+#X obj 58 392 seqrow~;
+#X obj 58 452 seqrow~;
+#X obj 58 512 seqrow~;
+#X connect 1 0 17 0;
+#X connect 2 0 17 1;
+#X connect 3 0 5 0;
+#X connect 5 0 10 0;
+#X connect 5 0 12 0;
+#X connect 9 0 4 0;
+#X connect 11 0 9 1;
+#X connect 11 0 13 1;
+#X connect 11 0 20 1;
+#X connect 11 0 21 1;
+#X connect 11 0 22 1;
+#X connect 12 0 11 0;
+#X connect 13 0 4 0;
+#X connect 15 0 16 1;
+#X connect 15 0 9 1;
+#X connect 15 0 13 1;
+#X connect 15 0 20 1;
+#X connect 15 0 21 1;
+#X connect 15 0 22 1;
+#X connect 17 0 0 0;
+#X connect 17 0 16 0;
+#X connect 17 0 9 0;
+#X connect 17 0 13 0;
+#X connect 17 0 20 0;
+#X connect 17 0 21 0;
+#X connect 17 0 22 0;
+#X connect 18 0 1 0;
+#X connect 19 0 17 0;
+#X connect 20 0 4 0;
+#X connect 21 0 4 0;
+#X connect 22 0 4 0;
 #X restore 968 262 pd seq;
 #X text 956 452 -------;
 #X obj 1024 236 r duration;
