@@ -45,7 +45,7 @@
 #X floatatom 66 190 5 0 0 0 - - -;
 #X obj 20 283 t b f;
 #X obj 142 179 hsl 795 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 73600 1;
+-1 -1 0 1;
 #N canvas 442 292 822 1023 hitshot 0;
 #X obj 58 438 outlet~;
 #X obj 58 400 tabplay~ sample;
@@ -117,8 +117,8 @@
 #X restore 973 310 pd loops;
 #X text 954 436 todo list;
 #X text 955 612 vis ngs~;
-#X text 953 471 slow seq with adsr from pos + speed;
-#X text 953 511 wavetable dist;
+#X text 954 628 slow seq with adsr from pos + speed;
+#X text 955 643 wavetable dist;
 #X text 956 555 midi controller;
 #X text 955 578 test recording;
 #X text 955 534 loops;
