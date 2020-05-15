@@ -33,8 +33,8 @@ export LADSPA_PATH
 	-alsaadd pulse \
 	-audioadddev 'UMC204HD 192k' \
 	-r 48000 \
-	-midiindev 1 \
-	-midioutdev 1 \
+	-midiindev 2 \
+	-midioutdev 2 \
 	-audiobuf 10 -path $PDPATH \
 	-send "pd dsp 1" $@
 

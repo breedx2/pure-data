@@ -1,4 +1,4 @@
-#N canvas 625 335 450 466 10;
+#N canvas 1207 527 1087 1123 10;
 #X obj 167 414 ctlout;
 #X msg 301 193 99;
 #X msg 235 193 98;
@@ -27,6 +27,8 @@
 #X text 262 210 ctrl high#;
 #X obj 332 143 >> 7;
 #X obj 51 270 % 128;
+#X obj 388 93 inlet;
+#X text 381 75 channel;
 #X connect 1 0 0 1;
 #X connect 2 0 0 1;
 #X connect 3 0 0 0;
@@ -57,3 +59,4 @@
 #X connect 23 0 3 1;
 #X connect 26 0 22 1;
 #X connect 27 0 0 0;
+#X connect 28 0 0 2;
